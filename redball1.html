@@ -1,0 +1,219 @@
+<html>
+<head>
+    <script type = 'text/javascript' src='https://storage.googleapis.com/ics-redball/redball.js'></script>
+    <script type = 'text/javascript'>
+
+    function sayhelloworld(){
+
+        alert ('hello world from in a function');
+
+    }
+
+    function moveup(){
+	
+	for(i=500; i<510; i++) {
+			redball.top = redball.top -5;
+
+    }
+	for(i=500; i<510; i++) {
+			redball.top = redball.top -5;
+	}
+}
+    function movedown(){
+	
+	for(i=500; i<510; i++) {
+			redball.top = redball.top +5;
+
+    }
+	
+	for(i=500; i<510; i++) {
+			redball.top = redball.top +5;
+    }
+	
+}
+    function moveleft(){
+
+	for(i=500; i<510; i++) {
+			redball.left = redball.left -5;
+    }
+
+	for(i=500; i<510; i++) {
+			redball.left = redball.left -5;	
+}			
+			
+	}
+    function moveright(){
+
+	
+	for(i=500; i<510; i++) {
+			redball.left = redball.left +5;
+			
+    }
+	
+	for(i=500; i<510; i++) {
+			redball.left = redball.left +5;
+			}
+}
+	
+	function upright() {
+	
+	for(i=500; i<510; i++)  {
+		redball.top = redball.top -5;
+		redball.left = redball.left +5;
+		}
+		
+		for(i=500; i<510; i++) {
+		redball.top = redball.top -5;
+		redball.left = redball.left +5;
+		}
+	}
+	
+	function downright() {
+
+	for(i=500; i<510; i++)  {
+		redball.top = redball.top +5;
+		redball.left = redball.left +5;
+		}
+		
+		for(i=500; i<510; i++) {
+		redball.top = redball.top +5;
+		redball.left = redball.left +5;
+			}
+		}
+	function upleft () {
+	
+	for(i=500; i<510; i++)  {
+		redball.top = redball.top -5;
+		redball.left = redball.left -5;
+		}
+		
+		for(i=500; i<510; i++) {
+		redball.top = redball.top -5;
+		redball.left = redball.left -5;
+		}
+	}
+	function downleft () {
+
+			for(i=500; i<510; i++)  {
+		redball.top = redball.top +5;
+		redball.left = redball.left -5;
+		}
+		
+		for(i=500; i<510; i++) {
+		redball.top = redball.top +5;
+		redball.left = redball.left -5;
+		
+			}
+		}
+	function square(){
+
+		for(i=500; i<510; i++) {
+			redball.left = redball.left +5;
+		}
+		
+		for(i=500; i<510; i++) {
+			redball.top = redball.top +5;
+		}
+		
+		for(i=500; i<510; i++) {
+			redball.left = redball.left -5;
+		}
+		
+		for(i=500; i<510; i++) {
+			redball.top = redball.top -5;
+			
+		}
+	}
+
+	function triangle () {
+
+		for(i=500; i<510; i++) {
+			redball.left = redball.left -5;
+		}
+
+		for(i=500; i<510; i++) {
+			redball.top = redball.top -5;
+			redball.left = redball.left +5;
+		}
+
+		for (i=500; i<510; i++) {
+			redball.top = redball.top +5;
+			redball.left = redball.left +5;
+		}
+
+		for(i=500; i<510; i++) {
+			redball.left = redball.left -5;
+		
+		}
+	}
+				
+	function octagon () {	
+
+		for(i=500; i<520; i++) {
+			redball.left = redball.left +3;
+
+		}
+		for(i=500; i<520; i++) {
+			redball.top = redball.top +3;
+			redball.left = redball.left +3;
+
+		}
+		for(i=500; i<520; i++) {
+			redball.top = redball.top +3;
+			redball.left = redball.left -3;
+
+		}
+		for(i=500; i<520; i++) {
+			redball.left = redball.left -3;
+
+		}
+		for(i=500; i<520; i++) {
+			redball.top = redball.top -3;
+			redball.left = redball.left -3;
+		}
+		for(i=500; i<520; i++) {
+			redball.top = redball.top -5;
+		redball.left = redball.left +5;
+
+		}
+	}
+		
+
+	
+				
+		</script>
+</head>
+
+<body>
+
+    <button onclick="sayhelloworld();">Hello</button>
+
+    <button onclick="moveup()")>Move Up</button>
+
+    <button onclick="movedown()")>Move Down</button>
+
+    <button onclick="moveleft()")>Move Left</button>
+
+    <button onclick="moveright()")>Move Right</button>
+	
+	<button onclick="upright()")>Move Up-Right</button>
+
+	<button onclick="downright()")>Move down-right</button>
+	
+	<button onclick="upleft()")>Move Up-Left</button>
+
+	<button onclick="downleft()">Move down-left</button>
+	
+	<button onclick="square()")>Move Square</button>
+	
+	<button onclick="triangle()")>Move Triangle</button>
+	
+	<button onclick="octagon()")>Move octagon</button>
+
+	<button onclick="circle ()")> Move Circle</button>
+
+    <img id='redball' src='http://www.icstars.org/files/redball.jpg'/>
+
+</body>
+
+</html>
